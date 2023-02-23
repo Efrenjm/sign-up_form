@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Norse-bold";
+    src: url("meta/Norse-Bold.otf");
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    justify-content: space-around;
+    font-size: max(3vh,10px);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+img {
+    height: 100vh;
+} 
+a {
+    color: white;
+}
+.right {
+    width: 60vw;
+    flex-grow: 2;
+    background-color: rgba(248, 248, 255, 0.848);
+}
+.left{
+    background: url("meta/halie-west-25xggax4bSA-unsplash.png") no-repeat center/cover;
+    flex-grow: 1;
+    height: max(100vh,auto);
+    width: min(30vw,200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.title{
+    background-color: black ;
+    height: min(15vh,12vw);
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20vh 0;
+    padding: 3vh 0;
+    column-gap: 2vw;
+    opacity: 0.7;
+}
+.odin-logo{
+    height: min(15vh,12vw);
+}
+
+.odin-text{
+    font-family: Norse-bold;
+    padding-top: 4vh;
+    font-size: min(15vh,12vw);
+    text-align: center;
+}
+.author{
+    font-size:  min(9px,2vh,3vw);
+    text-align: center;
+}
+.right>div{
+    /* font-size: clamp(21px,3vh,5rem); */
+    font-size: clamp(max(6px,1vh,2vw) 2px min(18px,3vh,2vw));
+    font-weight: bold;
+}
+.description{
+    margin: min(80px,12vh) min(80px,12vw) 0 min(6vw,80px);
+}
+.fieldset{
+    box-shadow: 0.2vw 1vh rgba(0, 0, 0, 0.05);
+    padding: 2vh 0 4vh min(6vw,80px);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    gap: 1vh;
+}
+.form-fields{
+    display: flex;
+    flex-direction: column;
+    gap: min(2vh,8px);
+}
+.form-fields>div{
+    display: flex;
+    flex-direction: row;
+    gap: max(15px,3vw);
+}
+.form-fields>div>div{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+label{
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    font-size: min(10px,2vh,3vw);
+
+}
+input{
+    font-weight: 100;
+    font-size: min(10px,2vh,3vw);
+    border: 1px groove rgba(0, 0, 0, 0.3); 
+    border-radius: 6px;
+    padding: 4px;
+    /* border-color: rgba(0, 0, 0, 0.3); */
+}
+input:valid{
+    border: 1px groove rgb(72, 147, 52); 
+
+}
+button{
+    color: white;
+    background-color: rgb(72, 147, 52);
+    border-radius: min(16px,3vh,5vw);
+    border: 0;
+    font-size: min(14px,3vh,5vw);
+    padding: 1.5vh 1.5vw;
+    margin: max(8px,3vh) min(80px,12vw) 0 min(6vw,80px);
+}
+button+p{
+    font-size: min(9px,2vh,3vw);
+    font-weight: 100;
+    margin: 1vh min(80px,12vw) 0 min(6vw,80px);
+}
+button+p>a{
+    color: rgb(72, 147, 52);
+}
