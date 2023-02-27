@@ -64,7 +64,7 @@ a {
 }
 .right>div{
     /* font-size: clamp(21px,3vh,5rem); */
-    font-size: clamp(max(6px,1vh,2vw) 2px min(18px,3vh,2vw));
+    font-size: min(18px,4vh,3vw);
     font-weight: bold;
 }
 .description{
@@ -101,15 +101,10 @@ label{
 }
 input{
     font-weight: 100;
-    font-size: min(10px,2vh,3vw);
+    font-size: min(12px,2vh,3vw);
     border: 1px groove rgba(0, 0, 0, 0.3); 
     border-radius: 6px;
-    padding: 4px;
-    /* border-color: rgba(0, 0, 0, 0.3); */
-}
-input:valid{
-    border: 1px groove rgb(72, 147, 52); 
-
+    padding: 4px
 }
 button{
     color: white;
